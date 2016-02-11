@@ -39,7 +39,7 @@ test('no dependencies (lodash)', function (t) {
   }, t.end)
 })
 
-test('scoped modules without version spec (@rstacruz/tap-spec)', function (t) {
+test.only('scoped modules without version spec (@rstacruz/tap-spec)', function (t) {
   prepare()
   install(['@rstacruz/tap-spec'], { quiet: true })
   .then(function () {
