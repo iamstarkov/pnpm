@@ -41,7 +41,7 @@ test('no dependencies (lodash)', function (t) {
 
 test.only('scoped modules without version spec (@rstacruz/tap-spec)', function (t) {
   prepare()
-  install(['@rstacruz/tap-spec'], { quiet: true })
+  install(['@rstacruz/tap-spec'])
   .then(function () {
     _ = require(join(process.cwd(), 'node_modules', '@rstacruz/tap-spec'))
     t.ok(typeof _ === 'function', 'tap-spec is available')
